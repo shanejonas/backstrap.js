@@ -1,0 +1,118 @@
+@import 'default'
+
+body
+  background-color: rgb(49,59,65)
+
+.stage 
+  > header
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#222))
+    -webkit-box-shadow: inset 0px 1px 0px #585858
+    border-top: 2px solid #111
+    z-index: -1
+
+  > footer
+    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111))
+
+.panel 
+  > header
+    color: #FFF
+    font-weight: bold
+    text-shadow: 0px -1px 0px black
+    border-bottom: 1px solid #000
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.4)
+
+  > header > .button
+    color: #BBB
+    -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.2), inset 0px 0px 5px rgba(0,0,0,0.7)
+    -webkit-border-radius: 3px
+    &:active 
+      color: #CCC
+      text-shadow: 0 -1px 0 rgba(0,0,0, 0.4), 0px 0px 6px rgba(255,255,255,0.2)
+      -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 3px 0 rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 0 20px rgba(0,0,0, 0.6)
+
+  > article ul li
+    color: #CCC
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.3)
+    padding: 10px
+    line-height: 40px
+    height: 40px
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1), inset 0px -1px 0px rgba(0,0,0,0.3)
+    background: rgb(49,59,65)
+
+  > article ul li:active
+    font-weight: light
+    color: #CCC
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.3)
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1), inset 0px -1px 0px rgba(0,0,0,0.3)
+    background: rgb(39,49,55)
+
+
+.tabbar .button.rounded
+  color: #BBB
+  font-weight: 300
+  text-shadow: 0 -1px 0px #111
+  padding: 0px 12px 0px 12px
+  -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.2), inset 0px 0px 5px rgba(0,0,0,0.7)
+  -webkit-border-radius: 3px
+  &:active 
+    color: #CCC
+    text-shadow: 0 -1px 0 rgba(0,0,0, 0.4), 0px 0px 6px rgba(255,255,255,0.2)
+    -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 3px 0 rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 0 20px rgba(0,0,0, 0.6)
+
+
+.tabbar .button.boxed
+  color: #BBB
+  border-top: 1px solid rgba(255,255,255,0.1)
+  border-right: 1px solid rgba(0,0,0,0.3)
+  border-left: 1px solid rgba(255,255,255,0.1)
+  border-bottom: 3px solid #334842
+  -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.2), 0px -1px 6px rgba(0,0,0,0.3)
+  background: transparent
+  &.active
+    border-bottom: 3px solid #44aaaa
+  &:active 
+    color: #CCC
+    text-shadow: 0 -1px 0 rgba(0,0,0, 0.4), 0px 0px 6px rgba(255,255,255,0.2)
+    -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 3px 0 rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 0 20px rgba(0,0,0, 0.6)
+
+article .content div.button
+  background: grey
+  &:active
+    background: white
+
+.buttonbar
+  width: 100%
+  background: rgba(0,0,0,0.5)
+  clear: both
+  overflow: hidden
+
+input
+  -webkit-border-radius: 3px
+  padding: 5px
+
+textarea
+  width: 100%
+  height: 20%
+  padding: 10px
+  font-size: 1em
+
+.buttonbar .button
+  float: right
+  -webkit-box-shadow: inset 0px 1px 0px #FFF
+  width: 25px
+  height: 25px
+  border-radius: 3px
+  background: -webkit-gradient(linear, left top, left bottom, from(#DDD), to(#BBB))
+  color: #222
+  text-shadow: 0px 1px 0px #EEE
+  font-family: Helvetica
+  font-weight: bold
+  border: 1px solid #BBB
+  margin: 5px
+  font-size: 19px
+
+.buttonbar .button:active
+  background: -webkit-gradient(linear, left top, left bottom, from(#BBB), to(#DDD))
+  text-shadow: none
+  -webkit-box-shadow: none
+  color: #44aaaa

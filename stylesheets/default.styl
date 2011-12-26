@@ -1,0 +1,168 @@
+/* default styles */
+
+* 
+  margin: 0;
+  padding: 0;
+
+html
+  height: 100%;
+  overflow: hidden;
+
+body 
+  font-family: "Helvetica Neue";
+  width: 100%
+  height: 100%
+  overflow-x: hidden
+  overflow-y: hidden
+  -webkit-user-select: none
+  margin: 0
+  background-color: #aaa
+
+.stage
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  height: 100%
+  overflow: hidden
+
+
+#body
+  height: 100%
+
+.stage 
+  > header
+    color: #CCC
+    position: absolute
+    top: 0
+    height: 50px
+    left: 0
+    right: 0
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#222))
+    -webkit-box-shadow: inset 0px 1px 0px #585858
+    border-top: 2px solid #111
+    z-index: -1
+
+  > article
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+
+  > footer
+    position: absolute
+    height: 50px
+    left: 0
+    right: 0
+    bottom: 0
+    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111))
+
+.panel
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 50px
+
+.panel 
+  > header
+    color: #CCC
+    text-align: center
+    position: absolute
+    height: 50px
+    top: 0
+    left: 0
+    right: 0
+    line-height: 50px
+
+  > header > span
+    text-align: center
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.2)
+    font-size: 1.3em
+
+  > header .button.left
+    float: left
+
+  > header .button.right
+    float: right
+
+  > header > .button
+    font-weight: 300
+    text-shadow: 0 -1px 0px #111
+    padding: 0px 12px 0px 12px
+    margin: 6px
+    background: transparent
+    line-height: 36px
+    width: auto
+
+  > article
+    margin-top: 50px
+    bottom: 50px
+    height: auto
+    left: 0
+    right: 0
+    overflow: scroll
+    -webkit-overflow-scrolling: touch
+
+  > article ul li
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.3)
+    padding: 10px
+    line-height: 40px
+    height: 40px
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1), inset 0px -1px 0px rgba(0,0,0,0.3)
+
+  > article ul li:active
+    padding: 10px
+    line-height: 40px
+    height: 40px
+
+nav.tabbar 
+  color: #CCC
+  position: absolute;
+  display: -webkit-box
+  -webkit-box-orient: horizontal
+  left: 0
+  right: 0
+  height: 100%
+
+.tabbar .button
+  -webkit-box-flex: 2
+  margin: 6px
+  background: transparent
+  line-height: 36px
+  width: auto
+
+
+.tabbar .button span
+  font-size: 13px
+  letter-spacing: 1px
+  font-weight: bold
+  width: 100%
+  display: inline-block
+  text-align: center
+  bottom: 3px
+  line-height: normal
+
+.tabbar button.active
+  -webkit-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3), inset 0 1px 1px 0 rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.2)
+
+article .content div.button
+  display: block;
+  width: auto
+  margin: 5px
+  padding: 15px
+  -webkit-border-radius: 3px
+  background: grey
+  &:active
+    background: white
+
+.error
+  position: absolute
+  left: 0
+  right: 0
+  height: 50px
+  opacity: 0.6
+  background: grey;
+
